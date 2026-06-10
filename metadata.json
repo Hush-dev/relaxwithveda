@@ -1,0 +1,6 @@
+{
+  "name": "Veda Wellness & Spa",
+  "description": "An award-winning, soothing digital experience for Veda Wellness & Spa, presenting premium salon and holistic wellness treatments across Chandrapur, Nagpur, and Tadoba.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
