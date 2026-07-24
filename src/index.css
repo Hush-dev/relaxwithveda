@@ -5,19 +5,22 @@
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Outfit", "Inter", sans-serif;
 
-  --color-sand-50: #FAF9F6;  /* Warm linen */
-  --color-sand-100: #F3F1EB; /* Cream */
-  --color-sand-200: #E6E2D8; /* Soft clay */
-  --color-sand-300: #D3CDC0; /* Terracotta mud */
-  --color-sand-800: #3C3830; /* Dark linen thread */
-  --color-sand-950: #1C1914; /* Deep earth charcoal */
+  --color-white: #F7F2E9;    /* Calm, soft off-white canvas for cards and elevated elements */
 
-  --color-sage-50: #F4F6F4;
-  --color-sage-100: #E8EBE7;
-  --color-sage-200: #D2DAD0;
-  --color-sage-700: #425244;
-  --color-sage-800: #2F3A30;
-  --color-sage-900: #1C241D;
+  --color-sand-50: #F2EBE1;  /* Rich, tranquil muddy off-white / raw unbleached linen */
+  --color-sand-100: #E5DDCF; /* Soft calm earthy sand */
+  --color-sand-150: #DAD1C0; /* Muted clay sand */
+  --color-sand-200: #CFC5B2; /* Soft clay mud border */
+  --color-sand-300: #BDB09B; /* Terracotta mud accent */
+  --color-sand-800: #363129; /* Dark linen thread */
+  --color-sand-950: #181512; /* Deep earth charcoal */
+
+  --color-sage-50: #EAEAE0;  /* Muted earthy sage tint */
+  --color-sage-100: #DCDED2;
+  --color-sage-200: #C7CCC0;
+  --color-sage-700: #3C483E;
+  --color-sage-800: #2A332B;
+  --color-sage-900: #171F18;
   
   --animate-spin-slow: spin 20s linear infinite;
   --animate-fade-in-up: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -40,19 +43,19 @@
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAF9F6;
+  background: #F2EBE1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D3CDC0;
+  background: #BDB09B;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C4BCAE;
+  background: #A89A84;
 }
 
 body {
-  background-color: #FAF9F6;
-  color: #1C1914;
+  background-color: #F2EBE1;
+  color: #181512;
   font-family: var(--font-sans);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -68,3 +71,63 @@ body {
   text-align: justify;
   text-justify: inter-word;
 }
+
+/* Fix iOS Safari date, time and text inputs intrinsic width, zoom & overflow issues */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+  font-size: 16px !important; /* Prevents iOS Safari auto-zoom on focus */
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  input[type="date"],
+  input[type="time"],
+  input[type="text"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 0.875rem !important; /* 14px on sm screens and above */
+  }
+}
+
+input[type="date"],
+input[type="time"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-date-and-time-value,
+input[type="time"]::-webkit-date-and-time-value {
+  text-align: left;
+  min-height: 1.2em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.7;
+  padding: 0;
+  margin-left: auto;
+}
+

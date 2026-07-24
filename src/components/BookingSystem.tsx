@@ -41,9 +41,14 @@ export default function BookingSystem({
   useEffect(() => {
     if (isOpen) {
       const originalStyle = document.body.style.overflow;
+      const originalOverflowX = document.body.style.overflowX;
       document.body.style.overflow = 'hidden';
+      document.body.style.overflowX = 'hidden';
+      document.documentElement.style.overflowX = 'hidden';
       return () => {
         document.body.style.overflow = originalStyle;
+        document.body.style.overflowX = originalOverflowX;
+        document.documentElement.style.overflowX = '';
       };
     }
   }, [isOpen]);
@@ -200,7 +205,7 @@ export default function BookingSystem({
             </div>
 
             {/* Scrollable Content Container */}
-            <div className="flex-grow overflow-y-auto px-6 sm:px-8 py-5 space-y-6">
+            <div className="flex-grow overflow-y-auto overflow-x-hidden px-4 sm:px-8 py-5 space-y-6 min-w-0 max-w-full">
 
               {/* Warnings details inside scroll space */}
               {locationError && (
@@ -351,43 +356,43 @@ export default function BookingSystem({
               </div>
 
               {/* Appointment Booking Form */}
-              <form onSubmit={handleWhatsAppBooking} className="space-y-4 text-left">
+              <form onSubmit={handleWhatsAppBooking} className="space-y-4 text-left min-w-0 max-w-full">
                 <span className="text-[10px] uppercase tracking-widest text-sand-400 font-bold block">Your Details</span>
 
                 {/* Name */}
-                <div className="space-y-1">
+                <div className="space-y-1 min-w-0">
                   <label className="text-[9px] uppercase tracking-widest text-sand-500 font-bold block">Full Name</label>
                   <input
                     type="text"
                     required
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="w-full px-4 py-3 bg-white border border-sand-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700"
+                    className="w-full max-w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-sand-200 rounded-xl text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700 box-border block"
                     placeholder="Your Full Name"
                   />
                 </div>
 
                 {/* Contact Phone */}
-                <div className="space-y-1">
+                <div className="space-y-1 min-w-0">
                   <label className="text-[9px] uppercase tracking-widest text-sand-500 font-bold block">WhatsApp Number</label>
                   <input
                     type="tel"
                     required
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
-                    className="w-full px-4 py-3 bg-white border border-sand-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700"
+                    className="w-full max-w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-sand-200 rounded-xl text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700 box-border block"
                     placeholder="Mobile Number (e.g., +91...)"
                   />
                 </div>
 
                 {/* Sanctuary Select with Tadoba rule integration */}
-                <div className="space-y-1">
+                <div className="space-y-1 min-w-0">
                   <label className="text-[9px] uppercase tracking-widest text-sand-500 font-bold block">Choose Location</label>
                   <select
                     required
                     value={location}
                     onChange={(e: any) => setLocation(e.target.value)}
-                    className="w-full px-4 py-3 bg-white border border-sand-200 rounded-xl text-xs sm:text-sm text-sand-800 focus:outline-none focus:ring-1 focus:ring-sage-700 tracking-wide"
+                    className="w-full max-w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-sand-200 rounded-xl text-base sm:text-sm text-sand-800 focus:outline-none focus:ring-1 focus:ring-sage-700 tracking-wide box-border block"
                   >
                     <option value="">Select a Sanctuary Location</option>
                     <option value="Nagpur">Nagpur (Salon & Wellness Spa)</option>
@@ -397,37 +402,37 @@ export default function BookingSystem({
                 </div>
 
                 {/* Date & Time selection */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 min-w-0 max-w-full w-full">
+                  <div className="space-y-1 min-w-0 w-full">
                     <label className="text-[9px] uppercase tracking-widest text-sand-500 font-bold block">Preferred Date</label>
                     <input
                       type="date"
                       required
                       value={date}
                       onChange={(e) => setDate(e.target.value)}
-                      className="w-full px-4 py-3 bg-white border border-sand-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700"
+                      className="w-full max-w-full min-w-0 px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-sand-200 rounded-xl text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700 box-border block appearance-none"
                     />
                   </div>
-                  <div className="space-y-1">
+                  <div className="space-y-1 min-w-0 w-full">
                     <label className="text-[9px] uppercase tracking-widest text-sand-500 font-bold block">Preferred Time</label>
                     <input
                       type="time"
                       required
                       value={time}
                       onChange={(e) => setTime(e.target.value)}
-                      className="w-full px-4 py-3 bg-white border border-sand-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700"
+                      className="w-full max-w-full min-w-0 px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-sand-200 rounded-xl text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700 box-border block appearance-none"
                     />
                   </div>
                 </div>
 
                 {/* Special Request or Silence note fields */}
-                <div className="space-y-1">
+                <div className="space-y-1 min-w-0">
                   <label className="text-[9px] uppercase tracking-widest text-sand-500 font-bold block">Special requests</label>
                   <textarea
                     rows={2}
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
-                    className="w-full px-4 py-3 bg-white border border-sand-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700 leading-normal"
+                    className="w-full max-w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-sand-200 rounded-xl text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-sage-700 leading-normal box-border block"
                     placeholder="e.g., Prefer silence, specific therapist, or any allergies..."
                   />
                 </div>
