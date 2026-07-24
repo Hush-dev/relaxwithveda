@@ -12,46 +12,26 @@ interface HomeProps {
 const INSTAGRAM_POSTS = [
   {
     id: 1,
-    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1781081798/insta_img_1_v8lfcr.jpg",
+    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928542/nag3_lya7qm.jpg",
     likes: "247",
     comments: "12",
     caption: "Raw sandstone facades & terracotta wellness pools designed to reconnect your circadian flow. Sanctuary I, Chandrapur. #VedaWellness #Sanctuary"
   },
   {
     id: 2,
-    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1781081799/insta_img_2_i4kut8.jpg",
+    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929204/IMG_1647.JPG_kmrp7q.jpg",
     likes: "189",
     comments: "8",
     caption: "Active molecules of sweet wild saffron and organic sweet almond oil to protect structural hair air-dried elasticity. #BotanicalWellness #OrganicSalon"
   },
   {
     id: 3,
-    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1781081799/insta_img_3_hgadfa.jpg",
+    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928542/nag4_kmul8y.jpg",
     likes: "412",
     comments: "28",
     caption: "Stepping into Tadoba Deciduous Baths. Sandalwood hot stone massage, private wood cabins, and wild bamboo showers. #TadobaRetreat #VedaBaths"
   },
-  {
-    id: 4,
-    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1781081799/insta_img_4_girtnh.jpg",
-    likes: "305",
-    comments: "15",
-    caption: "Circadian skincare. Our custom Med-Dermal Facials utilize advanced 3D Hydro-oxygen infusions to repair natural moisture reservoirs with zero downtime. #Skincare"
-  },
-  {
-    id: 5,
-    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1781081798/insta_img_5_gvlhza.jpg",
-    likes: "156",
-    comments: "6",
-    caption: "Unwinding after treatment with warm wild honey & cardamom infusions. Every sensory element is thoughtfully aligned to soothe the mind. #TheVedaPhilosophy #Soothe"
-  },
-  {
-    id: 6,
-    imageUrl: "https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1781081799/insta_img_6_t1zzow.jpg",
-    likes: "278",
-    comments: "19",
-    caption: "Gifting solitude. Our custom gold-foil templates are now available for WhatsApp or premium letterpress envelope delivery. #VedaVows #MindfulGifting"
-  }
+  
 ];
 
 export default function Home({ onNavigate, onOpenBooking, isSoundscapeOn, onToggleSoundscape }: HomeProps) {

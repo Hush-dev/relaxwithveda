@@ -14,7 +14,9 @@ const GALLERY_IMAGES = [
   'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928542/nag4_kmul8y.jpg'
 ];
 
-const MAP_EMBED = 'https://maps.google.com/maps?q=Dharampeth,Nagpur,India&t=&z=14&ie=UTF8&iwloc=&output=embed';
+const MAP_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3386620474434!2d79.05698137471732!3d21.13891668398702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c16bdbea7f2b%3A0xda2f5f0f57a6d108!2sVEDA%20LUXURIOUS%20WELLNESS%20SPA%20%26%20BEAUTY!5e0!3m2!1sen!2sin!4v1784929691487!5m2!1sen!2sin';
+
+
 
 export default function LocationNagpurPage({ onOpenBookingWithLocation, onNavigate }: LocationPageProps) {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
