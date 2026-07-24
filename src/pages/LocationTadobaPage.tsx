@@ -9,12 +9,12 @@ interface LocationPageProps {
 }
 
 const GALLERY_IMAGES = [
-  'https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=1200&auto=format&fit=crop'
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929301/tadoba1_tpntxc.jpg',
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929204/IMG_1647.JPG_kmrp7q.jpg',
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929335/gift_service_image_pjt7v3.jpg'
 ];
 
-const MAP_EMBED = 'https://maps.google.com/maps?q=Moharli,Tadoba,India&t=&z=12&ie=UTF8&iwloc=&output=embed';
+const MAP_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d675923.2631960758!2d78.72405450634429!3d20.629518221845043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd333f34a4f44b3%3A0xe633a784e225eddc!2sVrruksh%20Eco-Stay!5e0!3m2!1sen!2sin!4v1781423050461!5m2!1sen!2sin';
 
 export default function LocationTadobaPage({ onOpenBookingWithLocation, onNavigate }: LocationPageProps) {
   const [activeImgIndex, setActiveImgIndex] = useState(0);

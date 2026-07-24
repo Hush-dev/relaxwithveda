@@ -9,12 +9,12 @@ interface LocationPageProps {
 }
 
 const GALLERY_IMAGES = [
-  'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop'
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929104/cpur1_rxbhml.jpg',
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929204/IMG_1647.JPG_kmrp7q.jpg',
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928882/insta_img_1_zdhdtn.jpg'
 ];
 
-const MAP_EMBED = 'https://maps.google.com/maps?q=Civil%20Lines,Chandrapur,India&t=&z=14&ie=UTF8&iwloc=&output=embed';
+const MAP_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956533.1449120776!2d78.61678831263704!3d20.528449869700573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd2d766b12b18e1%3A0x41d79433cb420d7d!2sVeda%20Luxurious%20Wellness%20Spa%20%26%20Beauty!5e0!3m2!1sen!2sin!4v1781422951277!5m2!1sen!2sin';
 
 export default function LocationChandrapurPage({ onOpenBookingWithLocation, onNavigate }: LocationPageProps) {
   const [activeImgIndex, setActiveImgIndex] = useState(0);

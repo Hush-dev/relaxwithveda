@@ -9,9 +9,9 @@ interface LocationPageProps {
 }
 
 const GALLERY_IMAGES = [
-  'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=1200&auto=format&fit=crop'
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928740/nag1_ezrdbu.jpg',
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928659/nag5_ovind2.jpg',
+  'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928542/nag4_kmul8y.jpg'
 ];
 
 const MAP_EMBED = 'https://maps.google.com/maps?q=Dharampeth,Nagpur,India&t=&z=14&ie=UTF8&iwloc=&output=embed';

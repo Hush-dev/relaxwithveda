@@ -229,7 +229,7 @@ export default function BookingSystem({
                         <h4 className="text-xs font-serif font-semibold text-sand-950 mt-1">{service.title}</h4>
                         <div className="flex gap-3 text-[9px] text-sand-400 font-mono uppercase tracking-wider mt-1.5">
                           <span className="flex items-center gap-1"><Clock className="w-3 h-3 text-sage-800" />{service.duration}</span>
-                          <span className="text-sand-600 font-bold font-sans animate-fade-in">₹{service.price.toLocaleString()}</span>
+                          {/* <span className="text-sand-600 font-bold font-sans animate-fade-in">₹{service.price.toLocaleString()}</span> */}
                         </div>
                       </div>
                       <button

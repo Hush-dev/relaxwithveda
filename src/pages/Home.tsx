@@ -456,7 +456,7 @@ export default function Home({ onNavigate, onOpenBooking, isSoundscapeOn, onTogg
                 <div className="sm:col-span-5 aspect-[4/5] rounded-2xl overflow-hidden shadow-sm">
                   <img 
                     referrerPolicy="no-referrer"
-                    src="https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1781081798/gift_card_service_image_tncn1p.jpg" 
+                    src="https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928542/nag4_kmul8y.jpg" 
                     alt="Luxury gift card wrap" 
                     className="w-full h-full object-cover saturate-[0.8] group-hover:scale-105 transition-transform duration-700"
                   />
