@@ -81,8 +81,8 @@ export default function FloatingContact({
   }, []);
 
   // General helpline details matching Veda VIP sanctuaries
-  const PHONE_NUMBER = '+919158954321';
-  const WHATSAPP_URL = 'https://wa.me/919158954321?text=Hello%20Veda%20Wellness%20%26%20Spa%2C%20I%20would%20like%20to%20arrange%20a%20sanctuary%20reservation.';
+   const PHONE_NUMBER = '+917276313253';
+  const WHATSAPP_URL = 'https://wa.me/917276313253?text=Hello%20Veda%20Wellness%20%26%20Spa%2C%20I%20would%20like%20to%20arrange%20a%20sanctuary%20reservation.';
 
   return (
     <div className={`fixed right-0 z-45 select-none flex flex-col items-end pointer-events-none transition-all duration-500 ease-out ${isScrolled ? 'bottom-6' : 'bottom-10'}`}>

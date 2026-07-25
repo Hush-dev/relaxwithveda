@@ -945,33 +945,33 @@ export const LOCATIONS: LocationInfo[] = [
     subtitle: 'Linen and Stone Sanctuary',
     isWellnessOnly: false,
     description: 'Our flagship retreat designed around high archways, warm clay tones, and water channels. Providing comprehensive hair designs, professional nails, and deeply relaxing traditional massage cabins side by side.',
-    address: 'Veda Mansion, Civil Lines, Near VIP Guest House, Chandrapur - 442401',
-    timing: '09:00 AM - 08:30 PM (Daily)',
-    phone: '+91 94228 12345',
-    coordinates: '20.0101, 79.3102',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop'
+    address: 'Beside Baker Bliss Cafe, Wadgaon Phata, Chandrapur - 442401',
+    timing: '10:00 AM - 10:00 PM (Daily)',
+    phone: '+91 7276313253 / +91 7820949509',
+    coordinates: '20.0052, 79.2891',
+    image: 'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929204/IMG_1647.JPG_kmrp7q.jpg'
   },
   {
     name: 'Nagpur',
     subtitle: 'Metropolitan Silent Reserve',
     isWellnessOnly: false,
     description: 'A two-story minimalist architectural space created to escape urban white noise. Features state-of-the-art oxygen dermal rooms, high-heritage hair stylists, and absolute silence sound treatment domes.',
-    address: 'Plot 12, VIP Road, Dharampeth Extension, Nagpur - 440010',
-    timing: '10:00 AM - 09:00 PM (Daily)',
-    phone: '+91 91589 54321',
-    coordinates: '21.1458, 79.0882',
-    image: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1200&auto=format&fit=crop'
+    address: 'Swapnil Rajni Apartment, 1st Floor, Near Batukbhai Jewellers, Dharampeth, Nagpur - 440010',
+    timing: '10:00 AM - 10:00 PM (Daily)',
+    phone: '+91 7276313253 / +91 7820949509',
+    coordinates: '21.1416, 79.0652',
+    image: 'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928740/nag1_ezrdbu.jpg'
   },
   {
     name: 'Tadoba',
     subtitle: 'Wilderness Bamboo Sanctuary',
     isWellnessOnly: true,
     description: 'An organic forest spa constructed from certified teak wood, bamboo, and terracotta tiles near the national tiger reserve. We strictly offer ancient Ayurvedic body massages and sound baths. Strictly no noisy hairdryers, chemical dyes, or acrylic nail work allowed here.',
-    address: 'Veda Jungle Retreat, Moharli Gate Reserve, Forest Range, Tadoba - 442906',
-    timing: '08:00 AM - 07:00 PM (Appt Only)',
-    phone: '+91 98901 98901',
-    coordinates: '20.2185, 79.3567',
-    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=1200&auto=format&fit=crop'
+    address: 'Vrukksh Eco Stay Resort, 12/1, Moharli, Bhamdeli, Tadoba - 442404',
+    timing: '10:00 AM - 10:00 PM (Daily)',
+    phone: '+91 7276313253 / +91 7820949509',
+    coordinates: '20.2678, 79.3242',
+    image: 'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929301/tadoba1_tpntxc.jpg'
   }
 ];
 

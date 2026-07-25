@@ -271,10 +271,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-sand-50 selection:bg-sage-200 selection:text-sage-900 transition-colors duration-500">
       
-      {/* Decorative vertical bounds running down sideboards for boutique quality */}
-      <div className="absolute inset-y-0 left-12 w-[1px] bg-sand-200/20 pointer-events-none" />
-      <div className="absolute inset-y-0 right-12 w-[1px] bg-sand-200/20 pointer-events-none" />
-
+     
       {/* Shared Header Navigation */}
       <Navbar 
         currentPage={currentPage}

@@ -92,7 +92,8 @@ export default function BookingSystem({
 
     // Determine target WhatsApp phone from selected location info
     const locationObj = LOCATIONS.find(l => l.name === location);
-    const targetPhone = locationObj ? locationObj.phone.replace(/[^0-9]/g, '') : '919422812345';
+    const rawPhone = locationObj ? locationObj.phone.split('/')[0] : '917276313253';
+    const targetPhone = rawPhone.replace(/[^0-9]/g, '');
 
     // Build highly polished WhatsApp message
     const isAmountVoucher = giftCardConfig && (giftCardConfig.type === 'amount' || giftCardConfig.giftType === 'amount');
@@ -447,19 +448,19 @@ export default function BookingSystem({
                     <MessageSquare className="w-4 h-4 text-amber-200" />
                     Reserve via WhatsApp
                   </button>
-                  <span className="text-[8.5px] text-center block text-sand-400 tracking-wider uppercase mt-2 font-mono">
+                  {/* <span className="text-[8.5px] text-center block text-sand-400 tracking-wider uppercase mt-2 font-mono">
                     You will be redirected with prefilled message
-                  </span>
+                  </span> */}
                 </div>
 
               </form>
             </div>
 
             {/* Quick trust assurances footer */}
-            <div className="text-center py-4 bg-sand-50/90 border-t border-sand-150 flex items-center justify-center gap-1 text-[9.5px] uppercase tracking-widest text-[#7E8B83] font-semibold shrink-0">
+            {/* <div className="text-center py-4 bg-sand-50/90 border-t border-sand-150 flex items-center justify-center gap-1 text-[9.5px] uppercase tracking-widest text-[#7E8B83] font-semibold shrink-0">
               <ClipboardCheck className="w-3.5 h-3.5 text-sage-800" />
               We confirm within 15 minutes
-            </div>
+            </div> */}
 
           </motion.div>
         </>

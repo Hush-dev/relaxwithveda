@@ -180,7 +180,7 @@ export default function Navbar({ currentPage, onNavigate, onOpenBooking }: Navba
                   {/* Operational Notes */}
                   <div className="mt-4 text-[11px] text-sand-500 font-sans leading-relaxed tracking-wide space-y-1">
                     <p className="font-medium text-sand-700">Operating Hours</p>
-                    <p>Open Daily: 8:00 AM – 10:00 PM</p>
+                    <p>Open Daily: 10:00 AM – 10:00 PM</p>
                     <p>Prior reservation recommended.</p>
                   </div>
                 </div>

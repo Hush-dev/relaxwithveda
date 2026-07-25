@@ -49,18 +49,18 @@ export default function LocationTadobaPage({ onOpenBookingWithLocation, onNaviga
       'telephone': locationData.phone,
       'address': {
         '@type': 'PostalAddress',
-        'streetAddress': 'Veda Jungle Retreat, Moharli Gate Reserve, Forest Range',
+        'streetAddress': 'Vrukksh Eco Stay Resort, 12/1, Moharli, Bhamdeli',
         'addressLocality': 'Tadoba',
         'addressRegion': 'Maharashtra',
-        'postalCode': '442906',
+        'postalCode': '442404',
         'addressCountry': 'IN'
       },
       'geo': {
         '@type': 'GeoCoordinates',
-        'latitude': '20.2185',
-        'longitude': '79.3567'
+        'latitude': '20.2678',
+        'longitude': '79.3242'
       },
-      'openingHours': 'Mo-Su 08:00-19:00',
+      'openingHours': 'Mo-Su 10:00-22:00',
       'priceRange': '₹₹₹'
     };
 
@@ -195,7 +195,7 @@ export default function LocationTadobaPage({ onOpenBookingWithLocation, onNaviga
                   <div>
                     <span className="text-[10px] font-mono text-sand-400 uppercase tracking-widest block font-bold">Phone</span>
                     <a
-                      href={`tel:${locationData.phone.replace(/\s+/g, '')}`}
+                      href={`tel:${locationData.phone.split('/')[0].replace(/\s+/g, '')}`}
                       className="text-xs text-sand-950 font-bold hover:underline"
                     >
                       {locationData.phone}
@@ -328,16 +328,16 @@ export default function LocationTadobaPage({ onOpenBookingWithLocation, onNaviga
               className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl transition-all duration-300 hover:bg-sand-50"
             >
               {/* Image Container */}
-              <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center rounded-2xl overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-sm transition-all duration-300">
+              <div className="w-24 h-24 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 flex items-center justify-center rounded-2xl sm:rounded-[2rem] overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-md group-hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/v1781003855/nagpur_location_image_l8ajl8.webp" 
+                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1784961465/Nag_location_mb38ul.png" 
                   alt="Nagpur Sanctuary" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="text-center">
-                <h3 className="font-serif text-sm sm:text-lg text-sand-950 group-hover:text-sage-800 transition-colors">
+                <h3 className="font-serif text-sm sm:text-xl md:text-2xl font-medium text-sand-950 group-hover:text-sage-800 transition-colors">
                   Nagpur
                 </h3>
               </div>
@@ -350,16 +350,16 @@ export default function LocationTadobaPage({ onOpenBookingWithLocation, onNaviga
               className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl transition-all duration-300 hover:bg-sand-50"
             >
               {/* Image Container */}
-              <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center rounded-2xl overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-sm transition-all duration-300">
+              <div className="w-24 h-24 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 flex items-center justify-center rounded-2xl sm:rounded-[2rem] overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-md group-hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/v1781003855/chandrapurpur_location_image_zbnxlz.webp" 
+                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1784961465/Cpur_location_vvkzsf.png" 
                   alt="Chandrapur Sanctuary" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="text-center">
-                <h3 className="font-serif text-sm sm:text-lg text-sand-950 group-hover:text-sage-800 transition-colors">
+                <h3 className="font-serif text-sm sm:text-xl md:text-2xl font-medium text-sand-950 group-hover:text-sage-800 transition-colors">
                   Chandrapur
                 </h3>
               </div>
@@ -372,16 +372,16 @@ export default function LocationTadobaPage({ onOpenBookingWithLocation, onNaviga
               className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl bg-sand-50 border border-sand-200 transition-all duration-300"
             >
               {/* Image Container (Active style) */}
-              <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center rounded-2xl overflow-hidden bg-white border border-sage-800/50 shadow-sm transition-all duration-300">
+              <div className="w-24 h-24 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 flex items-center justify-center rounded-2xl sm:rounded-[2rem] overflow-hidden bg-white border border-sage-800/50 shadow-md group-hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/v1781003856/tadoba_location_image_sskbi3.webp" 
+                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1784961465/Tadoba_location_mnrqoi.png" 
                   alt="Tadoba Sanctuary" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="text-center">
-                <h3 className="font-serif text-sm sm:text-lg text-sage-800 font-bold">
+                <h3 className="font-serif text-sm sm:text-xl md:text-2xl text-sage-800 font-bold">
                   Tadoba
                 </h3>
               </div>

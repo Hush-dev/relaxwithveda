@@ -17,10 +17,10 @@ export default function SanctuariesPage({ onOpenBooking, onNavigate }: Sanctuari
       type: 'Salon & Wellness Spa',
       tagline: 'The ultimate metropolitan restore.',
       description: 'Our flagship studio features tall sandstone pillars, double-thick acoustic clay shields, and custom light-spectrum treatment rooms. Complete with styling suites and silent pedicure basins.',
-      image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200',
+      image: 'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784928740/nag1_ezrdbu.jpg',
       rule: 'Full salon and wellness spa services available.',
-      timing: '10:00 - 21:00',
-      phone: '+91 91234 56782'
+      timing: '10:00 AM - 10:00 PM',
+      phone: '+91 7276313253 / +91 7820949509'
     },
     {
       id: 'chandrapur',
@@ -28,10 +28,10 @@ export default function SanctuariesPage({ onOpenBooking, onNavigate }: Sanctuari
       type: 'Salon & Wellness Spa',
       tagline: 'Warm terracotta tiles & skylit courtyards.',
       description: 'Resting on red earthen bricks and rich iron oxide walls, Chandrapur is structured around a towering glass atrium. Includes dedicated steam chambers and private massage rooms.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200',
+      image: 'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929204/IMG_1647.JPG_kmrp7q.jpg',
       rule: 'Full salon and wellness spa services available.',
-      timing: '10:05 - 20:30',
-      phone: '+91 91234 56783'
+      timing: '10:00 AM - 10:00 PM',
+      phone: '+91 7276313253 / +91 7820949509'
     },
     {
       id: 'tadoba',
@@ -39,10 +39,10 @@ export default function SanctuariesPage({ onOpenBooking, onNavigate }: Sanctuari
       type: 'Wellness Spa Sanctuary',
       tagline: 'Under the shade of ancient teakwood.',
       description: 'Built entirely on stilted timber and organic linen partitions, our Tadoba location functions as a deciduous wildlife retreat. Guests sit near open wood-fired mud pits and receive holistic sound baths.',
-      image: 'https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=1200',
+      image: 'https://res.cloudinary.com/dqrq2oos0/image/upload/v1784929301/tadoba1_tpntxc.jpg',
       rule: 'Wellness and spa services only. Salon and styling services are not available here.',
-      timing: '09:00 - 18:00',
-      phone: '+91 91234 56781'
+      timing: '10:00 AM - 10:00 PM',
+      phone: '+91 7276313253 / +91 7820949509'
     }
   ];
 
@@ -71,92 +71,92 @@ export default function SanctuariesPage({ onOpenBooking, onNavigate }: Sanctuari
         </div>
 
         {/* FIND A SANCTUARY NEAR YOU */}
-        <div className="py-12 bg-white border border-sand-200/60 rounded-[2.5rem] px-6 md:px-12 flex flex-col justify-center min-h-[35vh] relative z-20">
-          <div className="max-w-7xl mx-auto w-full text-center space-y-8">
-            {/* Header Divider */}
-            <div className="flex items-center justify-center gap-3 sm:gap-6">
-              <div className="h-[1px] w-8 sm:w-32 bg-sage-800/20 shrink" />
-              <span className="text-[10px] uppercase tracking-[0.3em] font-sans font-bold text-sage-800 whitespace-nowrap">
-                Find Us Near You
-              </span>
-              <div className="h-[1px] w-8 sm:w-32 bg-sage-800/20 shrink" />
-            </div>
-            
-            {/* Serif Title */}
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-sand-950 tracking-tight leading-tight max-w-3xl mx-auto">
-              Find Veda Wellness & Spa In Your City
-            </h2>
-            
-            {/* 3 Location Cards */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-8 md:gap-12 max-w-5xl mx-auto pt-6">
-              {/* Nagpur */}
-              <motion.div 
-                onClick={() => onNavigate('location-nagpur')}
-                whileHover={{ y: -6 }}
-                className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl transition-all duration-300 hover:bg-sand-50"
-              >
-                {/* Image Container */}
-                <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center rounded-2xl overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-sm transition-all duration-300">
-                  <img 
-                    src="https://res.cloudinary.com/dqrq2oos0/image/upload/v1781003855/nagpur_location_image_l8ajl8.webp" 
-                    alt="Nagpur Sanctuary" 
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-serif text-sm sm:text-lg text-sand-950 group-hover:text-sage-800 transition-colors">
-                    Nagpur
-                  </h3>
-                </div>
-              </motion.div>
+      <section className="py-16 bg-white border-t border-b border-sand-200/60 px-6 md:px-12 flex flex-col justify-center min-h-[35vh] relative z-20 mt-16 -mb-16">
+        <div className="max-w-7xl mx-auto w-full text-center space-y-8">
+          {/* Header Divider */}
+          <div className="flex items-center justify-center gap-3 sm:gap-6">
+            <div className="h-[1px] w-8 sm:w-32 bg-sage-800/20 shrink" />
+            <span className="text-[10px] uppercase tracking-[0.3em] font-sans font-bold text-sage-800 whitespace-nowrap">
+              Find Us Near You
+            </span>
+            <div className="h-[1px] w-8 sm:w-32 bg-sage-800/20 shrink" />
+          </div>
+          
+          {/* Serif Title */}
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-sand-950 tracking-tight leading-tight max-w-3xl mx-auto">
+            Find Veda Wellness & Spa In Your City
+          </h2>
+          
+          {/* 3 Location Cards */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-8 md:gap-12 max-w-5xl mx-auto pt-6">
+            {/* Nagpur */}
+            <motion.div 
+              onClick={() => onNavigate('location-nagpur')}
+              whileHover={{ y: -6 }}
+              className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl transition-all duration-300 hover:bg-sand-50"
+            >
+              {/* Image Container */}
+              <div className="w-24 h-24 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 flex items-center justify-center rounded-2xl sm:rounded-[2rem] overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-md group-hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1784961465/Nag_location_mb38ul.png" 
+                  alt="Nagpur Sanctuary" 
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-sm sm:text-xl md:text-2xl font-medium text-sand-950 group-hover:text-sage-800 transition-colors">
+                  Nagpur
+                </h3>
+              </div>
+            </motion.div>
 
-              {/* Chandrapur */}
-              <motion.div 
-                onClick={() => onNavigate('location-chandrapur')}
-                whileHover={{ y: -6 }}
-                className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl transition-all duration-300 hover:bg-sand-50"
-              >
-                {/* Image Container */}
-                <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center rounded-2xl overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-sm transition-all duration-300">
-                  <img 
-                    src="https://res.cloudinary.com/dqrq2oos0/image/upload/v1781003855/chandrapurpur_location_image_zbnxlz.webp" 
-                    alt="Chandrapur Sanctuary" 
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-serif text-sm sm:text-lg text-sand-950 group-hover:text-sage-800 transition-colors">
-                    Chandrapur
-                  </h3>
-                </div>
-              </motion.div>
+            {/* Chandrapur (Active) */}
+            <motion.div 
+              onClick={() => onNavigate('location-chandrapur')}
+              whileHover={{ y: -6 }}
+              className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl bg-sand-50 border border-sand-200 transition-all duration-300"
+            >
+              {/* Image Container (Active style) */}
+              <div className="w-24 h-24 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 flex items-center justify-center rounded-2xl sm:rounded-[2rem] overflow-hidden bg-white border border-sage-800/50 shadow-md group-hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1784961465/Cpur_location_vvkzsf.png" 
+                  alt="Chandrapur Sanctuary" 
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-sm sm:text-xl md:text-2xl text-sage-800 font-bold">
+                  Chandrapur
+                </h3>
+              </div>
+            </motion.div>
 
-              {/* Tadoba */}
-              <motion.div 
-                onClick={() => onNavigate('location-tadoba')}
-                whileHover={{ y: -6 }}
-                className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl transition-all duration-300 hover:bg-sand-50"
-              >
-                {/* Image Container */}
-                <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center rounded-2xl overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-sm transition-all duration-300">
-                  <img 
-                    src="https://res.cloudinary.com/dqrq2oos0/image/upload/v1781003856/tadoba_location_image_sskbi3.webp" 
-                    alt="Tadoba Sanctuary" 
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-serif text-sm sm:text-lg text-sand-950 group-hover:text-sage-800 transition-colors">
-                    Tadoba
-                  </h3>
-                </div>
-              </motion.div>
-            </div>
+            {/* Tadoba */}
+            <motion.div 
+              onClick={() => onNavigate('location-tadoba')}
+              whileHover={{ y: -6 }}
+              className="group cursor-pointer flex flex-col items-center space-y-3 sm:space-y-4 p-2 sm:p-4 rounded-3xl transition-all duration-300 hover:bg-sand-50"
+            >
+              {/* Image Container */}
+              <div className="w-24 h-24 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 flex items-center justify-center rounded-2xl sm:rounded-[2rem] overflow-hidden bg-sand-50 border border-sand-150 group-hover:bg-white group-hover:border-sage-800/50 shadow-md group-hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="https://res.cloudinary.com/dqrq2oos0/image/upload/q_auto/f_auto/v1784961465/Tadoba_location_mnrqoi.png" 
+                  alt="Tadoba Sanctuary" 
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-sm sm:text-xl md:text-2xl font-medium text-sand-950 group-hover:text-sage-800 transition-colors">
+                  Tadoba
+                </h3>
+              </div>
+            </motion.div>
           </div>
         </div>
+      </section>
 
         {/* Location Showcase Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -223,7 +223,7 @@ export default function SanctuariesPage({ onOpenBooking, onNavigate }: Sanctuari
                       <Phone className="w-4 h-4 text-sage-700/80 shrink-0" />
                       <div className="flex items-center gap-1.5 leading-none">
                         <span className="font-mono text-[9px] text-sand-400 uppercase tracking-widest font-bold">Phone:</span>
-                        <a href={`tel:${loc.phone}`} className="font-semibold hover:underline decoration-sage-700/40">
+                        <a href={`tel:${loc.phone.split('/')[0].replace(/\s+/g, '')}`} className="font-semibold hover:underline decoration-sage-700/40">
                           {loc.phone}
                         </a>
                       </div>
